@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAme-Picker</title>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <h1><span class="arcade">🎮</span>Game-Picker</h1>
+    <h2 class="SignupTitle">오늘의 추천 게임</h2>
+    <nav class="NavMenu">
+        <a href="index.html">홈</a>
+        <a href="오늘의게임.html">오늘의 추천 게임</a>
+        <a href="장르별추천.html">장르별 추천</a>
+        <a href="회원가입.html">회원가입</a>
+        <a href="로그인.html">로그인</a>
+    </nav>
+     <section class="TodayGame">
+        <h3>Game-Picker 픽, 오늘의 추천 게임! ( 그렇다고 매일 변하지는 않습니다. )</h3>
+        <div class="RandomBox">
+    <button id="randomGameButton">오늘의 랜덤 게임 뽑기</button>
+    <p id="randomGameResult">버튼을 눌러 랜덤 추천을 받아보세요.</p>
+</div>
+
+        <div class="GameList">
+
+            <div class="GameAAA" data-trailer="https://www.youtube.com/embed/nos_93rKYRc">
+                <img src="폴아웃뉴베가스.jpg" alt="폴아웃뉴베가스">
+                <div class="GameText">
+                    <h3>폴아웃: 뉴 베가스</h3>
+                    <p>
+                        고전 오픈월드 RPG 명작 게임인 폴아웃 시리즈의 뉴 베가스 타이틀입니다. 미중전쟁으로 발발한 세계적인 핵전쟁으로 인해 세상은 멸망했고, 플레이어는 멸망한 미국의 서부 모하비 황무지를 누비며 생존하고 배달부로써의 임무를 완료해야 합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="GameAAA" data-trailer="https://www.youtube.com/embed/ot7uXNQskhs">
+                <img src="스타듀밸리.jpg" alt="스타듀밸리">
+                <div class="GameText">
+                    <h3>Stardew Valley</h3>
+                    <p>
+                        힐링 농장 경영 게임인 스타듀밸리입니다. 플레이어는 악덕 대기업 조자에서 수년을 근무하다 지쳐서 돌아가신 할아버지가 남긴 ' 펠리컨 마을 ' 이라는 곳으로 귀농하기로 결정합니다. 플레이어는 펠리컨 마을에서 바쁘게 농장도 운영하고 주민들과 관계를 쌓으며 자유롭게 생활하게 됩니다.
+                    </p>
+                </div>
+            </div>
+
+               <div class="GameAAA" data-trailer="https://www.youtube.com/embed/1Hojv0m3TqA">
+                <img src="언더테일.jpg" alt="언더테일">
+                <div class="GameText">
+                    <h3>Undertale</h3>
+                    <p>
+                        인간과 괴물이라는 두 종족이 존재하는 세상 속에서, 어린 인간인 플레이어는 괴물들이 봉인된 지하세계로 우연히 떨어지게 됩니다. 다시 지상으로 돌아가기 위해 여러 괴물들과 만나고 지하세계를 탐험하며 그들과 친구가 되거나, 적이 되어야 합니다.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div id="TrailerModal" class="TrailerModal">
+    <div class="TrailerBox">
+        <button id="CloseTrailer" class="CloseTrailer">닫기 X</button>
+
+        <iframe 
+            id="TrailerFrame"
+            src=""
+            title="게임 트레일러"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+<script src="js/script.js"></script>   
+</body>
+</html>
